@@ -8,25 +8,24 @@
     <link rel="stylesheet" href="TDL.css" />
   </head>
   <body>
-    <p>Todo List Pravtice 1</p>
+    <p>Todo List</p>
 
-    <input
-      type="text"
-      id="input"
-      placeholder="Todo name"
-      class="js-name-input"
-    />
-    <button
-      onclick="
+    <div class="todo-input-grid">
+      <input placeholder="Todo name" class="js-name-input name-input" />
 
-    addTodo();
+      <input type="date" class="js-due-date-input due-date-input" />
 
-    "
-    >
-      Add
-    </button>
+      <button
+        onclick="
+      addTodo();
+      "
+      class="add-todo-button"
+      >
+        Add
+      </button>
+    </div>
 
-    <div class="js-todo-list"></div>
+    <div class="js-todo-list todo-grid"></div>
 
     <p>Todo List Practice 2</p>
 
