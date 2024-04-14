@@ -1,3 +1,4 @@
+/*
 const array1 = [1, 2, 3];
 const array2 = array1.slice();
 array2.push(4);
@@ -17,3 +18,15 @@ break;
 }
 
 }
+*/
+
+
+document.body.addEventListener("keydown", (event) => {
+  if (event.key === "r") {
+    playGame("rock");
+  } else if (event.key === "p") {
+    playGame("paper");
+  } else if (event.key === "s") {
+    playGame("scissors");
+  }
+});
